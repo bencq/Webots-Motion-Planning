@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# javaFile
+*.class
+
+# log
+*.log
+
+# wbo
+*.wbo
