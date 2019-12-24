@@ -38,7 +38,6 @@ struct Node
 };
 
 /** variables **/
-int fRec[ROW][COL];
 char matrix[ROW][COL];
 bool inOpen[ROW][COL];
 bool vis[ROW][COL];
@@ -80,11 +79,6 @@ int computeH(int r, int c)
 }
 
 
-void init()
-{
-
-}
-
 
 int main()
 {
@@ -100,7 +94,6 @@ int main()
         }
     }
     memset(fa, -1, sizeof(fa));
-    memset(fRec, -1, sizeof(fRec));
     Node SRC(SRC_R, SRC_C, 0, 0 + computeH(SRC_R, SRC_C));
     openList.insert(SRC);
     inOpen[SRC_R][SRC_C] = true;
