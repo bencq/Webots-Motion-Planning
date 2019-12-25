@@ -9,22 +9,15 @@
 //  import com.cyberbotics.webots.controller.Motor;
 import com.cyberbotics.webots.controller.Robot;
 
-import javafx.util.Pair;
-
 import com.cyberbotics.webots.controller.Motor;
 import com.cyberbotics.webots.controller.GPS;
 import com.cyberbotics.webots.controller.Keyboard;
 import com.cyberbotics.webots.controller.Compass;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
-
-import com.cyberbotics.webots.controller.DistanceSensor;
 
 class Point
 {
@@ -37,19 +30,19 @@ class Point
 		this.x = x;
 		this.z = z;
 	}
-	
+
 	public double getLength()
 	{
 		return Math.sqrt(x * x + z * z);
 	}
-	
+
 	public void normalize()
 	{
 		double len = this.getLength();
 		this.x /= len;
 		this.z /= len;
 	}
-	
+
 	public static Point minus(Point p1, Point p2)
 	{
 		return new Point(p1.x - p2.x, p1.z - p2.z);
@@ -63,6 +56,7 @@ public class avoid
 	{
 		return modDouble(Math.atan2(p2.z, p2.x) - Math.atan2(p1.z, p1.x), 2.0 * Math.PI);
 	}
+
 	static double modDouble(double a, double m)
 	{
 		double div = Math.floor(a / m);
@@ -70,14 +64,15 @@ public class avoid
 		if(r < 0.0) r += m;
 		return r;
 	}
-	
+
 	final static double MAX_SPEED = Math.PI * 2;
 	static boolean handControl = false;
 	static ArrayList<Point> points = new ArrayList<>();
 
 	public static void readRoute() throws IOException
 	{
-		File file_route = new File("route.txt");
+		File file_route = new File(new File(new File(avoid.class.getResource("").getPath()).getParentFile().getParentFile(), "algorithm"), "route.txt");
+		//System.out.println(file_route.getAbsolutePath());
 		Scanner scanner = new Scanner(file_route);
 
 		while (scanner.hasNext())
@@ -94,7 +89,7 @@ public class avoid
 
 		// initialize
 		readRoute();
-		
+
 		// create the Robot instance.
 		Robot robot = new Robot();
 
@@ -136,7 +131,6 @@ public class avoid
 				double tarTan = Math.atan2(moveVec.x, moveVec.z);
 				System.out.println("com: " + comTan);
 				System.out.println("move: " + tarTan);
-				
 
 			}
 			if(keyCode == 'C')
@@ -184,7 +178,7 @@ public class avoid
 			{
 				if(curTargetPointInd < points.size())
 				{
-					
+
 					double tarX = points.get(curTargetPointInd).x;
 					double tarZ = points.get(curTargetPointInd).z;
 					double[] gps_values = gps.getValues();
@@ -201,15 +195,13 @@ public class avoid
 						double[] compass_values = compass.getValues();
 						double comX = compass_values[0];
 						double comZ = compass_values[2];
-						
+
 						double dist = moveVec.getLength();
 						moveVec.normalize();
 						Point front = new Point(-comX, comZ);
-						
-						double beta = angle(front, moveVec) - Math.PI;
-						
 
-				
+						double beta = angle(front, moveVec) - Math.PI;
+
 						if(beta > 0.05)
 						{
 							leftSpeed = MAX_SPEED * beta / Math.PI;
@@ -227,9 +219,6 @@ public class avoid
 
 						}
 					}
-					
-					
-
 
 				}
 			}

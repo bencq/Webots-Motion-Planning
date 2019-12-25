@@ -120,11 +120,12 @@ int main()
         {
             int nr = r + dr[k];
             int nc = c + dc[k];
+
             if(outRange(nr, nc))
             {
                 continue;
             }
-            if(matrix[nr][nc] == 1)
+            if(matrix[nr][nc] == '1')
             {
                 continue;
             }
@@ -146,6 +147,7 @@ int main()
                 int newF = g+1 + computeH(nr, nc);
                 if(newF < arr[ind].f)
                 {
+                    fa[nr][nc] = {r, c};
                     int sz = openList.getSize();
                     swap(arr[ind], arr[sz-1]);
                     --openList.size;

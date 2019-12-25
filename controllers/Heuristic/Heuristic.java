@@ -76,7 +76,7 @@ public class Heuristic
 
 	public static void readRoute() throws IOException
 	{
-		File file_route = new File("route.txt");
+		File file_route = new File(new File(new File(Heuristic.class.getResource("").getPath()).getParentFile().getParentFile(), "algorithm"), "route.txt");
 		Scanner scanner = new Scanner(file_route);
 
 		while (scanner.hasNext())
