@@ -34,6 +34,7 @@ public class Epuck_avoid {
     leftMotor.setVelocity(0.0);
     rightMotor.setVelocity(0.0);
 
+
     // feedback loop: step simulation until receiving an exit event
     while (robot.step(timeStep) != -1) {
       // read sensors outputs
