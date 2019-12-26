@@ -88,13 +88,18 @@ public class Heuristic
 		scanner.close();
 	}
 	
-	final static double DS_VALUE = 1024.0;
+	final static double DS_VALUE = 512.0;
+	final static double DS_VALUE_2 = 1024.0;
 	
 	final static double MAX_SPEED = Math.PI * 2;
 	static boolean handControl = false;
 	static ArrayList<Point> points = new ArrayList<>();
 	static Random random = new Random();
 	static boolean meetObstacle = false;
+//	static int meetLeftCnt = 0;
+//	static int meetRightCnt = 0; 
+	static int bothCnt = 0;
+	static int cntRand = 60;
 
 	public static void main(String[] args) throws IOException
 	{
@@ -186,8 +191,8 @@ public class Heuristic
 				final Point targetVec = new Point(TAR_POINT.x - curX, TAR_POINT.z - curZ);
 				
 //				System.out.println(TAR_POINT.x + "," +  TAR_POINT.z + "," + curX + "," + curZ);
-				System.out.println(targetVec.getLength());
-				if(targetVec.getLength() >= 0.1)
+//				System.out.println(targetVec.getLength());
+				if(targetVec.getLength() >= 0.05)
 				{
 					
 					double[] dsValues = {0, 0, 0, 0, 0, 0, 0, 0};
@@ -197,11 +202,28 @@ public class Heuristic
 					}
 					
 					// detect obstacles
-					boolean left_obstacle = dsValues[7] > DS_VALUE;
-					boolean right_obstacle = dsValues[0] > DS_VALUE;
+					boolean left_obstacle = dsValues[7] > DS_VALUE || dsValues[6] > DS_VALUE_2;
+					boolean right_obstacle = dsValues[0] > DS_VALUE || dsValues[1] > DS_VALUE_2;
 					
-					if(left_obstacle)
+
+					if(left_obstacle && right_obstacle || bothCnt > 0)
 					{
+						System.out.println("bC: " + bothCnt);
+						//turn right
+						leftSpeed += 0.2 * MAX_SPEED;
+						rightSpeed -= 0.2 * MAX_SPEED;
+						meetObstacle = true;
+						++bothCnt;
+						
+						if(bothCnt >= cntRand)
+						{
+							bothCnt = 0;
+							cntRand = 40 + random.nextInt(40);
+						}
+					}
+					else if(left_obstacle)
+					{
+						System.out.println("left");
 						//turn right
 						leftSpeed += 0.2 * MAX_SPEED;
 						rightSpeed -= 0.2 * MAX_SPEED;
@@ -210,6 +232,7 @@ public class Heuristic
 					}
 					else if(right_obstacle)
 					{
+						System.out.println("right");
 						//turn left
 						leftSpeed -= 0.2 * MAX_SPEED;
 						rightSpeed += 0.2 * MAX_SPEED;
@@ -226,10 +249,15 @@ public class Heuristic
 							double coeZ = random.nextDouble();
 							double newX = 0.0;
 							double newZ = 0.0;
-							if(goTowardTar <= 0.2)
+							if(goTowardTar <= 0.1)
 							{
-								double augX = 2 * curX - TAR_POINT.x;
-								double augZ = 2 * curZ - TAR_POINT.z;
+								newX = coeX * SRC_POINT.x + (1 - coeX) * TAR_POINT.x;
+								newZ = coeZ * SRC_POINT.z + (1 - coeZ) * TAR_POINT.z;
+							}
+							else if(goTowardTar <= 0.2)
+							{
+								double augX = 2 * curX - TAR_POINT.x - 0.1;
+								double augZ = 2 * curZ - TAR_POINT.z - 0.1;
 								newX = coeX * augX + (1 - coeX) * TAR_POINT.x;
 								newZ = coeZ * augZ + (1 - coeZ) * TAR_POINT.z;
 							}
