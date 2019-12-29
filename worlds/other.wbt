@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.518894088522395 -0.686787653272864 -0.5089908095520638 2.1058518821038756
-  position -0.9656569943104116 5.340993220270759 -0.16881390691942166
+  orientation -0.6219182463082136 -0.5678161313372786 -0.53926110178844 2.1962793708109953
+  position 0.319272317286199 6.062174293861585 -0.7744033808253818
 }
 TexturedBackground {
 }
@@ -13,2498 +13,853 @@ RectangleArena {
   floorSize 3 3
   floorTileSize 0.2 0.2
 }
-DEF C_1 Group {
+DEF Cynlinder Solid {
+  translation 1.34123 0.05 -0.609169
   children [
-    DEF Cynlinder Solid {
-      translation 1.45 0.05 -1.15
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    DEF CynShape Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.54 0.08
+        roughness 1.1102230246251565e-16
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation 1.45 0.05 -0.45
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(1)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 1.45 0.05 -0.05
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(2)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 1.45 0.05 1.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(3)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry Cylinder {
+        height 0.1
+        radius 0.1
       }
     }
   ]
+  name "cylinder"
+  boundingObject USE CynShape
 }
-DEF C_3 Group {
+DEF Cynlinder Solid {
+  translation 0.0770813 0.05 0.758703
   children [
-    DEF Cynlinder Solid {
-      translation 1.25 0.05 -0.95
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(4)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    DEF CynShape Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.54 0.08
+        roughness 1.1102230246251565e-16
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation 1.25 0.05 -0.85
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(5)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 1.25 0.05 -0.15
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(6)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 1.25 0.05 0.45
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(7)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 1.45 0.05 1.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(8)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry Cylinder {
+        height 0.1
+        radius 0.1
       }
     }
   ]
+  name "cylinder(1)"
+  boundingObject USE CynShape
 }
-DEF C_4 Group {
+DEF Cynlinder Solid {
+  translation -1.25564 0.05 0.646333
   children [
-    DEF Cynlinder Solid {
-      translation 1.15 0.05 -1.45
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(9)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    DEF CynShape Shape {
+      appearance PBRAppearance {
+        baseColor 0.9372549019607843 0.1607843137254902 0.1607843137254902
+        roughness 1.1102230246251565e-16
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation 1.15 0.05 -0.95
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(10)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 1.15 0.05 -0.05
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(11)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 1.15 0.05 0.95
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(12)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry Cylinder {
+        height 0.1
+        radius 0.1
       }
     }
   ]
+  name "cylinder(2)"
+  boundingObject USE CynShape
 }
-DEF C_5 Group {
+DEF Cynlinder Solid {
+  translation -1.10858 0.05 -0.87216
   children [
-    DEF Cynlinder Solid {
-      translation 1.05 0.05 -1.45
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(13)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    DEF CynShape Shape {
+      appearance PBRAppearance {
+        baseColor 0.9372549019607843 0.1607843137254902 0.1607843137254902
+        roughness 1.1102230246251565e-16
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation 1.05 0.05 1.45
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(14)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry Cylinder {
+        height 0.1
+        radius 0.1
       }
     }
   ]
+  name "cylinder(3)"
+  boundingObject USE CynShape
 }
-DEF C_6 Group {
+DEF Cynlinder Solid {
+  translation -0.909759 0.05 -0.615276
   children [
-    DEF Cynlinder Solid {
-      translation 0.95 0.05 -1.15
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(15)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    DEF CynShape Shape {
+      appearance PBRAppearance {
+        baseColor 0.9372549019607843 0.1607843137254902 0.1607843137254902
+        roughness 1.1102230246251565e-16
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation 0.95 0.05 -0.05
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(16)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 0.95 0.05 0.55
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(17)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry Cylinder {
+        height 0.1
+        radius 0.1
       }
     }
   ]
+  name "cylinder(4)"
+  boundingObject USE CynShape
 }
-DEF C_7 Group {
+DEF Cynlinder Solid {
+  translation 0.0168672 0.05 -0.667646
   children [
-    DEF Cynlinder Solid {
-      translation 0.85 0.05 -0.05
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(18)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    DEF CynShape Shape {
+      appearance PBRAppearance {
+        baseColor 0.9372549019607843 0.1607843137254902 0.1607843137254902
+        roughness 1.1102230246251565e-16
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation 0.85 0.05 0.15
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(19)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 0.85 0.05 0.45
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(20)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 0.85 0.05 0.75
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(21)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 0.85 0.04 1.25
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(22)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry Cylinder {
+        height 0.1
+        radius 0.1
       }
     }
   ]
+  name "cylinder(5)"
+  boundingObject USE CynShape
 }
-DEF C_8 Group {
+DEF Cynlinder Solid {
+  translation 0.898155 0.05 -0.742667
   children [
-    DEF Cynlinder Solid {
-      translation 0.75 0.05 -1.25
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(23)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    DEF CynShape Shape {
+      appearance PBRAppearance {
+        baseColor 0.9372549019607843 0.1607843137254902 0.1607843137254902
+        roughness 1.1102230246251565e-16
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation 0.75 0.05 -0.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(24)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 0.75 0.05 0.65
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(25)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 0.75 0.05 1.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(26)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 0.75 0.05 1.45
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(27)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry Cylinder {
+        height 0.1
+        radius 0.1
       }
     }
   ]
+  name "cylinder(6)"
+  boundingObject USE CynShape
 }
-DEF C_9 Group {
+DEF Cynlinder Solid {
+  translation 0.752666 0.05 0.397643
   children [
-    DEF Cynlinder Solid {
-      translation 0.65 0.05 -0.65
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(28)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    DEF CynShape Shape {
+      appearance PBRAppearance {
+        baseColor 0.9372549019607843 0.1607843137254902 0.1607843137254902
+        roughness 1.1102230246251565e-16
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.1
       }
     }
   ]
+  name "cylinder(7)"
+  boundingObject USE CynShape
 }
-DEF C_10 Group {
+DEF Cynlinder Solid {
+  translation 0.571707 0.05 0.997768
   children [
-    DEF Cynlinder Solid {
-      translation 0.55 0.05 -1.25
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(29)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    DEF CynShape Shape {
+      appearance PBRAppearance {
+        baseColor 0.9372549019607843 0.1607843137254902 0.1607843137254902
+        roughness 1.1102230246251565e-16
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation 0.55 0.05 -0.45
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(30)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 0.55 0.05 0.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(31)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 0.55 0.05 -1.25
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(32)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry Cylinder {
+        height 0.1
+        radius 0.1
       }
     }
   ]
+  name "cylinder(8)"
+  boundingObject USE CynShape
 }
-DEF C_11 Group {
+DEF GREEN_BOX Solid {
+  translation -0.802873 0.05 0.893719
   children [
-    DEF Cynlinder Solid {
-      translation 0.45 0.05 -0.55
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(33)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 0.2189099510000001
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation 0.45 0.05 1.05
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(34)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry DEF BOX0 Box {
+        size 0.24 0.1 0.1
       }
     }
   ]
-}
-DEF C_12 Group {
-  children [
-    DEF Cynlinder Solid {
-      translation 0.35 0.05 -0.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(35)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
+  name "green box(3)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
     }
-    DEF Cynlinder Solid {
-      translation 0.35 0.05 1.05
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(36)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    geometry USE BOX0
+  }
+}
+DEF GREEN_BOX Solid {
+  translation -0.33918242786097275 0.05 1.1940807183760147
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 0.2189099510000001
+        metalness 0
+      }
+      geometry DEF BOX0 Box {
+        size 0.23 0.1 0.1
       }
     }
   ]
+  name "green box(2)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX0
+  }
 }
-DEF C_13 Group {
+DEF GREEN_BOX Solid {
+  translation -1.22613 0.05 -1.25248
+  rotation 0 1 0 2.3562
   children [
-    DEF Cynlinder Solid {
-      translation 0.25 0.05 0.15
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(37)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 0.2189099510000001
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation 0.25 0.05 0.25
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(38)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 0.25 0.05 1.15
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(39)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry DEF BOX0 Box {
+        size 0.23 0.1 0.1
       }
     }
   ]
-}
-DEF C_14 Group {
-  children [
-    DEF Cynlinder Solid {
-      translation 0.15 0.05 -0.65
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(40)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
+  name "green box(5)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
     }
-    DEF Cynlinder Solid {
-      translation 0.15 0.05 0.85
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(41)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    geometry USE BOX0
+  }
+}
+DEF GREEN_BOX Solid {
+  translation -0.0635739492744482 0.05 -1.3686883369175478
+  rotation 0 1 0 0.7853981610000004
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 0.2189099510000001
+        metalness 0
+      }
+      geometry DEF BOX0 Box {
+        size 0.23 0.1 0.1
       }
     }
   ]
+  name "green box(1)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX0
+  }
 }
-DEF C_15 Group {
+DEF GREEN_BOX Solid {
+  translation -1.27644 0.05 1.14334
   children [
-    DEF Cynlinder Solid {
-      translation 0.05 0.05 -1.45
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(42)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 0.2189099510000001
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation 0.05 0.05 -1.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(43)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 0.05 0.05 -0.95
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(44)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 0.05 0.05 -0.85
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(45)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation 0.05 0.05 0.05
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(46)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry DEF BOX0 Box {
+        size 0.23 0.1 0.1
       }
     }
   ]
-}
-DEF C_16 Group {
-  children [
-    DEF Cynlinder Solid {
-      translation -0.05 0.05 -1.05
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(47)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
+  name "green box(4)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
     }
-    DEF Cynlinder Solid {
-      translation -0.05 0.05 1.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(48)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    geometry USE BOX0
+  }
+}
+DEF GREEN_BOX Solid {
+  translation -0.9386374206257768 0.05 0.20116655756455248
+  rotation -2.956558841448767e-16 -1 1.2246467991473532e-16 0.7853981801795871
+  scale 1.8403099339276179 1.8403099339276179 1.8403099339276179
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 0.2189099510000001
+        metalness 0
+      }
+      geometry DEF BOX0 Box {
+        size 0.23 0.1 0.1
       }
     }
   ]
-}
-DEF C_17 Group {
-  children [
-    DEF Cynlinder Solid {
-      translation -0.15 0.05 -1.05
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(49)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
+  name "green box(8)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
     }
-    DEF Cynlinder Solid {
-      translation -0.15 0.05 -0.75
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(50)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    geometry USE BOX0
+  }
+}
+DEF GREEN_BOX Solid {
+  translation -0.05 0.05 -0.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 0.2189099510000001
+        metalness 0
+      }
+      geometry DEF BOX0 Box {
+        size 0.23 0.1 0.1
       }
     }
   ]
+  name "green box(7)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX0
+  }
 }
-DEF C_18 Group {
+DEF BLUE_BOX Solid {
+  translation 0.3254752951300318 0.04999999999999956 0.2680028206082996
+  rotation 0 1 0 0.31
+  scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
   children [
-    DEF Cynlinder Solid {
-      translation -0.25 0.05 -0.85
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(51)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.519341125
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation -0.25 0.05 -0.65
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(52)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -0.25 0.05 -0.25
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(53)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -0.25 0.05 -0.15
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(54)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry DEF BOX1 Box {
+        size 0.1 0.1 0.1
       }
     }
   ]
+  name "blue box"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX1
+  }
 }
-DEF C_19 Group {
+DEF BLUE_BOX Solid {
+  translation 0.26575713696766556 0.04999999999999956 -0.49742424774896343
+  rotation 0 1 0 0.31
+  scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
   children [
-    DEF Cynlinder Solid {
-      translation -0.35 0.05 -1.15
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(55)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.519341125
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation -0.35 0.05 -1.05
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(56)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -0.35 0.05 -0.95
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(57)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -0.35 0.05 -0.05
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(58)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry DEF BOX1 Box {
+        size 0.1 0.1 0.1
       }
     }
   ]
-}
-DEF C_20 Group {
-  children [
-    DEF Cynlinder Solid {
-      translation -0.45 0.05 -0.75
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(59)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
+  name "blue box(12)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
     }
-    DEF Cynlinder Solid {
-      translation -0.45 0.05 0.45
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(60)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    geometry USE BOX1
+  }
+}
+DEF BLUE_BOX Solid {
+  translation 0.876101906524707 0.04999999999999956 -0.015807605289340387
+  rotation 0 1 0 0.31
+  scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.519341125
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.1 0.1 0.1
       }
     }
   ]
+  name "blue box(11)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX1
+  }
 }
-DEF C_21 Group {
+DEF BLUE_BOX Solid {
+  translation 1.0135189134018303 0.04999999999999956 -1.14682108981483
+  rotation 0 1 0 0.31
+  scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
   children [
-    DEF Cynlinder Solid {
-      translation -0.55 0.05 -1.45
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(61)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.519341125
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation -0.55 0.05 -1.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(62)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -0.55 0.05 -1.25
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(63)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -0.55 0.05 0.55
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(64)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -0.55 0.04 0.75
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(65)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry DEF BOX1 Box {
+        size 0.1 0.1 0.1
       }
     }
   ]
+  name "blue box(8)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX1
+  }
 }
-DEF C_22 Group {
+DEF BLUE_BOX Solid {
+  translation 0.9987005097323014 0.04999999999999956 -1.1220679147760797
+  rotation 0 1 0 0.31
+  scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
   children [
-    DEF Cynlinder Solid {
-      translation -0.65 0.05 -0.75
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(66)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.519341125
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation -0.65 0.05 -0.55
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(67)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -0.65 0.05 -0.25
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(68)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -0.65 0.05 0.55
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(69)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry DEF BOX1 Box {
+        size 0.1 0.1 0.1
       }
     }
   ]
+  name "blue box(9)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX1
+  }
 }
-DEF C_23 Group {
+DEF BLUE_BOX Solid {
+  translation 0.6343115733806294 0.04999999999999956 -1.3904730390501339
+  rotation 0 1 0 0.31
+  scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
   children [
-    DEF Cynlinder Solid {
-      translation -0.75 0.05 -0.65
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(70)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.519341125
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation -0.75 0.05 -0.15
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(71)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -0.75 0.05 0.95
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(72)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry DEF BOX1 Box {
+        size 0.1 0.1 0.1
       }
     }
   ]
-}
-DEF C_24 Group {
-  children [
-    DEF Cynlinder Solid {
-      translation -0.85 0.05 0.25
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(73)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
+  name "blue box(10)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
     }
-    DEF Cynlinder Solid {
-      translation -0.85 0.05 1.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(74)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    geometry USE BOX1
+  }
+}
+DEF BLUE_BOX Solid {
+  translation 1.112525742526521 0.05000000000000045 0.8897535012370201
+  rotation 0 1 0 5.284188352999999
+  scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.519341125
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.1 0.1 0.1
       }
     }
   ]
+  name "blue box(5)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX1
+  }
 }
-DEF C_25 Group {
+DEF BLUE_BOX Solid {
+  translation 1.07932 0.05 1.25
+  rotation 0 1 0 0.31
+  scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
   children [
-    DEF Cynlinder Solid {
-      translation -0.95 0.05 -0.95
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(75)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.519341125
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation -0.95 0.05 0.25
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(76)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -0.95 0.05 0.45
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(77)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -0.95 0.05 1.45
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(78)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry DEF BOX1 Box {
+        size 0.1 0.1 0.1
       }
     }
   ]
+  name "blue box(6)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX1
+  }
 }
-DEF C_26 Group {
+DEF BLUE_BOX Solid {
+  translation 1.0983668535890256 0.05 -0.3069956555599993
+  rotation 0 1 0 0.31
+  scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
   children [
-    DEF Cynlinder Solid {
-      translation -1.05 0.05 -0.05
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(79)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.519341125
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation -1.05 0.05 0.05
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(80)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -1.05 0.05 0.15
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(81)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry DEF BOX1 Box {
+        size 0.1 0.1 0.1
       }
     }
   ]
+  name "blue box(4)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX1
+  }
 }
-DEF C_27 Group {
+DEF BLUE_BOX Solid {
+  translation -0.5620068899054848 0.05 -0.2613508774176183
+  rotation 0 1 0 0.31
+  scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
   children [
-    DEF Cynlinder Solid {
-      translation -1.15 0.05 -1.25
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(82)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.519341125
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation -1.15 0.05 -0.45
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(83)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -1.15 0.05 -0.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(84)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -1.15 0.05 0.25
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(85)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -1.15 0.05 0.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(86)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry DEF BOX1 Box {
+        size 0.1 0.1 0.1
       }
     }
   ]
+  name "blue box(3)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX1
+  }
 }
-DEF C_28 Group {
+DEF BLUE_BOX Solid {
+  translation -0.43033399356155955 0.0499999999999889 -1.1130778433146995
+  rotation 0 1 0 0.31
+  scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
   children [
-    DEF Cynlinder Solid {
-      translation -1.25 0.05 -1.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(87)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.519341125
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation -1.25 0.05 -0.55
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(88)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -1.25 0.05 -0.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(89)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -1.25 0.05 1.35
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(90)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry DEF BOX1 Box {
+        size 0.1 0.1 0.1
       }
     }
   ]
+  name "blue box(2)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX1
+  }
 }
-DEF C_29 Group {
+DEF BLUE_BOX Solid {
+  translation -0.2659583718196481 0.04999999999999068 0.20326039723139777
+  rotation 0 1 0 0.31
   children [
-    DEF Cynlinder Solid {
-      translation -1.35 0.05 0.55
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(91)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.519341125
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.1 0.1 0.1
       }
     }
   ]
+  name "blue box(1)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX1
+  }
 }
-DEF C_30 Group {
+DEF YELLOW_BOX Solid {
+  translation 1.3466769001040904 0.05 -1.0549225459585974
+  rotation 0 -1 0 1.1707963603591738
   children [
-    DEF Cynlinder Solid {
-      translation -1.45 0.05 -0.95
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(92)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+        roughness 0.03934117200000009
+        metalness 0
       }
-    }
-    DEF Cynlinder Solid {
-      translation -1.45 0.05 0.25
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(93)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
-      }
-    }
-    DEF Cynlinder Solid {
-      translation -1.45 0.05 0.65
-      children [
-        Shape {
-          appearance PBRAppearance {
-            baseColor 0 1 0
-            roughness 0.2189099510000001
-            metalness 0
-          }
-          geometry DEF BOX0 Box {
-            size 0.07 0.07 0.07
-          }
-        }
-      ]
-      name "green cylinder(94)"
-      boundingObject Shape {
-        appearance PBRAppearance {
-          roughness 1.1102230246251565e-16
-          metalness 0
-        }
-        geometry DEF BOX0 Box {
-          size 0.07 0.07 0.07
-        }
+      geometry DEF BOX2 Box {
+        size 0.05 0.1 0.3
       }
     }
   ]
+  name "yellow box(5)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX2
+  }
 }
-DEF C_2 Group {
+DEF YELLOW_BOX Solid {
+  translation 0.43298074647524554 0.04999999999999201 -1.041060519656352
+  rotation 0 1 0 0.4
+  scale 1.1606858195656995 1.1606858195656995 1.1606858195656995
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+        roughness 0.03934117200000009
+        metalness 0
+      }
+      geometry DEF BOX2 Box {
+        size 0.05 0.1 0.3
+      }
+    }
+  ]
+  name "yellow box(2)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX2
+  }
+}
+DEF YELLOW_BOX Solid {
+  translation -0.3137103713711371 0.05 0.703911189847435
+  rotation 0 1 0 0.4
+  scale 1.1606858195656995 1.1606858195656995 1.1606858195656995
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+        roughness 0.03934117200000009
+        metalness 0
+      }
+      geometry DEF BOX2 Box {
+        size 0.05 0.1 0.3
+      }
+    }
+  ]
+  name "yellow box(3)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX2
+  }
+}
+DEF YELLOW_BOX Solid {
+  translation 0.3288203911599286 0.050000000000016434 1.2763181552079503
+  rotation 0 1 0 4.850589579
+  scale 1.1606858195656995 1.1606858195656995 1.1606858195656995
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+        roughness 0.03934117200000009
+        metalness 0
+      }
+      geometry DEF BOX2 Box {
+        size 0.05 0.1 0.3
+      }
+    }
+  ]
+  name "yellow box(4)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX2
+  }
+}
+DEF YELLOW_BOX Solid {
+  translation 0.3288203911599286 0.050000000000016434 1.2763181552079503
+  rotation 0 1 0 4.850589579
+  scale 1.1606858195656995 1.1606858195656995 1.1606858195656995
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+        roughness 0.03934117200000009
+        metalness 0
+      }
+      geometry DEF BOX2 Box {
+        size 0.05 0.1 0.3
+      }
+    }
+  ]
+  name "yellow box(6)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX2
+  }
+}
+DEF YELLOW_BOX Solid {
+  translation 1.3061608810210974 0.050000000000016434 0.665174250332558
+  rotation 0 -1 0 2.217993908359173
+  scale 1.1606858195656995 1.1606858195656995 1.1606858195656995
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+        roughness 0.03934117200000009
+        metalness 0
+      }
+      geometry DEF BOX2 Box {
+        size 0.05 0.1 0.3
+      }
+    }
+  ]
+  name "yellow box(7)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX2
+  }
+}
+DEF PINK_BOX Solid {
+  translation 0.5465353953144448 0.05000000000000711 -0.2758809086198649
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.1 0.3
+        roughness 0.16827074099999995
+        metalness 0
+      }
+      geometry DEF BOX3 Box {
+        size 0.15 0.1 0.08
+      }
+    }
+  ]
+  name "red box"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX3
+  }
+}
+DEF PINK_BOX Solid {
+  translation 1.2066958475837777 0.05 0.21698705096359616
+  rotation 0 1 0 5.23598774
+  scale 1.5911832712060372 1.5911832712060372 1.5911832712060372
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.1 0.3
+        roughness 0.16827074099999995
+        metalness 0
+      }
+      geometry DEF BOX3 Box {
+        size 0.15 0.1 0.08
+      }
+    }
+  ]
+  name "red box(2)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX3
+  }
+}
+DEF PINK_BOX Solid {
+  translation -0.35842005485769635 0.05 -0.8313913463927661
+  rotation 0 1 0 5.23598774
+  scale 1.5911832712060372 1.5911832712060372 1.5911832712060372
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.1 0.3
+        roughness 0.16827074099999995
+        metalness 0
+      }
+      geometry DEF BOX3 Box {
+        size 0.15 0.1 0.08
+      }
+    }
+  ]
+  name "red box(1)"
+  boundingObject Shape {
+    appearance PBRAppearance {
+      roughness 1.1102230246251565e-16
+      metalness 0
+    }
+    geometry USE BOX3
+  }
 }
 DEF COMPASS_ROBOT Robot {
   translation -1.4499831328350918 -0.00022884709912388695 -1.4499971522437987
@@ -2546,8 +901,8 @@ DEF COMPASS_ROBOT Robot {
         }
       ]
       endPoint Solid {
-        translation -0.0449996977658297 0.025003735885603874 3.313839421539655e-07
-        rotation -0.9999999999999964 3.457109833960758e-08 7.863860901206377e-08 5.167451773997682
+        translation -0.04499969776582987 0.025003735885603874 3.313839421539676e-07
+        rotation -0.9999999999999964 3.457109833960767e-08 7.863860901206392e-08 5.167451773997682
         children [
           DEF WHEEL Transform {
             rotation 0 0 1 1.57
@@ -2590,7 +945,7 @@ DEF COMPASS_ROBOT Robot {
         }
       ]
       endPoint Solid {
-        translation 0.04499978909857156 0.024999792741413594 -3.933596680857041e-06
+        translation 0.04499978909857156 0.024999792741413594 -3.9335966808570505e-06
         rotation 0.9999999999999974 5.359694883232894e-08 -4.8884001376963e-08 1.3798636282231744
         children [
           USE WHEEL
@@ -2826,7 +1181,7 @@ DEF COMPASS_ROBOT Robot {
     mass 0.5
   }
   rotationStep 0.25
-  controller "avoid"
+  controller "Heuristic"
 }
 Robot {
   translation -0.72078 6.39611e-05 0.0332828
@@ -2850,7 +1205,7 @@ Robot {
         }
       ]
       endPoint DEF EPUCK_LEFT_WHEEL Solid {
-        translation -0.025999102085574446 0.020001245376979015 3.4403393473678393e-06
+        translation -0.02599910208557428 0.020001245376979015 3.440339347367819e-06
         rotation 0.9999999999372848 -1.0305164240584763e-05 4.385655980439503e-06 0.6536558701647526
         children [
           DEF EPUCK_WHEEL Transform {
@@ -3006,7 +1361,7 @@ Robot {
       ]
       endPoint DEF EPUCK_RIGHT_WHEEL Solid {
         translation 0.02599948831801295 0.01999890793578413 1.7084201459777574e-06
-        rotation 0.9999999999886996 -1.8887382681523274e-06 4.362719372009176e-06 1.4118631075562897
+        rotation 0.9999999999886996 -1.8887382681523274e-06 4.362719372009193e-06 1.4118631075562897
         children [
           Transform {
             rotation 0 1 0 3.14159
@@ -4192,8 +2547,8 @@ Robot {
         }
       ]
       endPoint DEF EPUCK_LEFT_WHEEL Solid {
-        translation -0.02605301880286166 0.01989932436160192 -9.173127343474119e-05
-        rotation -0.9999474185774858 0.005279039091177142 0.008791577019863397 5.7347036439042975
+        translation -0.026053018802861577 0.01989932436160192 -9.173127343474103e-05
+        rotation -0.9999474185774858 0.0052790390911771545 0.008791577019863434 5.7347036439042975
         children [
           DEF EPUCK_WHEEL Transform {
             rotation 0 0 1 1.57
@@ -4347,7 +2702,7 @@ Robot {
         }
       ]
       endPoint DEF EPUCK_RIGHT_WHEEL Solid {
-        translation 0.02605581598264684 0.020001170080606628 -3.1866956369683363e-06
+        translation 0.026055815982646755 0.020001170080606628 -3.186695636968326e-06
         rotation 0.9999999999877528 -3.3928592067881766e-06 3.6031247397040914e-06 1.474163432662245
         children [
           Transform {

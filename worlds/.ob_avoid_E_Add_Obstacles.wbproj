@@ -8,5 +8,5 @@ selectionDisabled: 0
 viewpointLocked: 0
 orthographicViewHeight: 1
 textFiles: 2 "controllers/Epuck_avoid/Epuck_avoid.java" "controllers/avoid/avoid.java" "controllers/Heuristic/Heuristic.java"
-renderingDevicePerspectives: e-puck2:camera;1;1;0;0
 renderingDevicePerspectives: e-puck1:camera;1;1;0;0
+renderingDevicePerspectives: e-puck2:camera;1;1;0;0
