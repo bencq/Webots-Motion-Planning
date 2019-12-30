@@ -90,12 +90,15 @@ public class Heuristic
 	
 	final static double DS_VALUE = 512.0;
 	final static double DS_VALUE_2 = 1024.0;
+	static final double DSIT_TOLERANCE = 0.08;
 	
 	final static double MAX_SPEED = Math.PI * 2;
+	
 	static boolean handControl = false;
 	static ArrayList<Point> points = new ArrayList<>();
 	static Random random = new Random();
 	static boolean meetObstacle = false;
+	
 //	static int meetLeftCnt = 0;
 //	static int meetRightCnt = 0; 
 	static int bothCnt = 0;
@@ -192,7 +195,7 @@ public class Heuristic
 				
 //				System.out.println(TAR_POINT.x + "," +  TAR_POINT.z + "," + curX + "," + curZ);
 //				System.out.println(targetVec.getLength());
-				if(targetVec.getLength() >= 0.05)
+				if(targetVec.getLength() >= DSIT_TOLERANCE)
 				{
 					
 					double[] dsValues = {0, 0, 0, 0, 0, 0, 0, 0};
@@ -254,7 +257,7 @@ public class Heuristic
 								newX = coeX * SRC_POINT.x + (1 - coeX) * TAR_POINT.x;
 								newZ = coeZ * SRC_POINT.z + (1 - coeZ) * TAR_POINT.z;
 							}
-							else if(goTowardTar <= 0.2)
+							else if(goTowardTar <= 0.35)
 							{
 								double augX = 2 * curX - TAR_POINT.x - 0.1;
 								double augZ = 2 * curZ - TAR_POINT.z - 0.1;
